@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+</head>
+<body>
+    <section class="ok">
+        <div>
+            <div class="container">
+                <h2>Contact form</h2>
+           
+             <div class="row100">
+                <div class="col">
+                    <div class="inputbox">
+                        <span class="text">
+                            First Name
+                        </span>
+                        <input type="text" name="" required="required">
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inputbox">
+                        <span class="text">
+                            Last Name
+                        </span>
+                        <input type="text" name="" required="required">
+                      
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inputbox">
+                        <span class="text">
+                            Email
+                        </span>
+                        <input type="text" name="" required="required">
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inputbox">
+                        <span class="text">
+                            Mobile
+                        </span>
+                        <input type="text" name="" required="required">
+                       
+                    </div>
+                </div>
+                <!-- <div class="col">
+                    <div class="inputbox textarea">
+                        <span class="texti">
+                            type your text
+                        </span>
+                        <textarea name="" id="" cols="20" rows="6" required="required"></textarea>
+                       
+                        
+                    </div>
+                </div> -->
+                <div class="col">
+                  <input type="submit" value="send" class="button">
+                </div>
+            </div>
+         </div>
+
+        </div>
+    </section>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        
+        .ok{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* padding: 20px; */
+            width: 100%;
+            background: rgb(154, 200, 253);
+            
+        
+        }
+        .ok::before{
+            content: '';
+            position: absolute;
+            width: 300px; 
+            height: 300px;
+            border-radius: 50%;
+            background: linear-gradient(rgb(250, 128, 112),rgb(250, 218, 112));
+            transform: translate(-420px,-110px);
+            filter: blur(8px);
+        }
+        .ok::after{
+            content: '';
+            position: absolute;
+            width: 260px; 
+            height: 260px;
+            border-radius: 50%;
+            background: linear-gradient(rgb(250, 112, 209),rgb(178, 141, 252));
+            transform: translate(420px,110px);
+            filter: blur(8px);
+        }
+        .inputbox{
+            display: flex;
+            align-items: center;
+            margin-left: 100px;
+            
+        }
+        h2{
+            margin: 20px;
+            font-size: 30px;
+            text-decoration: underline;
+        }
+        .row100{
+            display: flex;
+            margin-left: -110px;
+           
+            justify-content: center;
+            flex-direction: column;
+        }
+        .col{
+            margin-top: 25px;
+        }
+        .container{
+            position: relative;
+            z-index: 5;
+            height: 100%;
+            width: 700px;
+            padding: 50px;
+            background: rgba(255, 255, 255, .1);
+            border-radius: 10px;
+            box-shadow: 0 25px 45px rgba(0, 0, 0, .1);
+            border: 1px solid rgba(255, 255, 255, .25);
+            border-right: 1px solid rgba(255, 255, 255, .1);
+            border-bottom: 1px solid rgba(255, 255, 255, .1);
+            overflow: hidden;
+            backdrop-filter: blur(25px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+           
+        }
+        
+        input{
+        padding: 2px;
+        background: rgba(255, 255, 255, .8);
+        
+       }
+       textarea{
+        margin-bottom: 10px;
+        background: rgba(255, 255, 255, .95);
+       }
+       span{
+        font-size: 1.4rem;
+        margin: 4px;
+       }
+       .button{
+            position: relative;
+            padding: 12px 20px;
+            background-color: rgb(36, 108, 241);
+            box-shadow:solid 0.25px rgba(0, 0, 0, .1);
+            border-radius: 14px;
+            font-size: 1.2rem;
+            color: rgb(255, 255, 255);
+           margin-left: 180px;
+           margin-top: 18px;
+           margin-bottom: 10px;
+
+        }
+    </style>
+</body>
+</html>
